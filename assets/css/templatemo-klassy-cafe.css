@@ -548,7 +548,6 @@ header
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -1470,18 +1469,18 @@ footer
 footer {
   margin-top: 60px;
   padding: 50px 0px;
-  background-color: #fb5849;
+  background-color: #fff;
 }
 
 footer .left-text-content p {
   margin-top: 5px;
-  color: #fff;
+  color: red;
   font-size: 14px;
   text-align: right;
 }
 
 footer .right-text-content p {
-  color: #fff;
+  color: red;
   font-size: 14px;
   margin-right: 15px;
   text-transform: uppercase;
