@@ -3,8 +3,7 @@
 * ---------------------------------------------------------------------------
 *
 * Template : Blue - A One-Page HTML Portfolio/Business Template
-* Author : Muhammad Morshd
-* Author URI : http://morsheds.com
+* 
 *
 * --------------------------------------------------------------------------- 
 *
@@ -20,6 +19,12 @@ body {
     line-height: 24px;
     font-size: 16px;
     color: #818181;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important
 }
 
 figure, p, address {
