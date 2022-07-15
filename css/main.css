@@ -1016,11 +1016,13 @@ textarea.form-control {
 /*============================================================
 	Footer
 ==============================================================*/
-
+.foot-logo{
+    max-width: 90%;
+}
 #footer {
-    background-color: #2E2E2E;
+    background-color: #fff;
     padding: 70px 0;
-    color: #fff;
+    color: #000;
 }
 
 .footer-content {
