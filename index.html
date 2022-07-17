@@ -38,6 +38,10 @@
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
 
+			
+		<link rel="icon" type="image/ico" href="favicon.ico" />
+
+		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
 
@@ -680,14 +684,27 @@ https://script.google.com/macros/s/AKfycbwTBBhXxDax1_kw1v4CnxXsVJ-mk4tdenzjHkWZO
 							</div>
 
 							
-							<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+							<form name="submit-to-google-sheet-one" id="email-subscribers" class="subscribe-form wow animated fadeInUp">
 								<div class="input-field">
-									<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-									<button type="submit" class="submit-icon my-submit-icon">
+									<input name="email" type="email" class="subscribe form-control" placeholder="Enter Your Email...">
+									<button name="submit" type="submit" class="submit-icon my-submit-icon">
 										<i class="fa fa-paper-plane fa-lg"></i>
 									</button>
 								</div>
 							</form>
+
+							<script>
+								const scriptURL1 = 'https://script.google.com/macros/s/AKfycbwTBBhXxDax1_kw1v4CnxXsVJ-mk4tdenzjHkWZO7N0Eqejcas/exec'
+								const form1 = document.forms['submit-to-google-sheet-one']
+
+								form1.addEventListener('submit', e => {
+									e.preventDefault()
+									fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+										.then(response => console.log('Success!', response))
+										.catch(error => console.error('Error!', error.message))
+								document.forms['email-subscribers'].reset()
+								})
+							</script>
 					
 							<p>Copyright &copy; 2022 Petite Soirée<a href="http://www.themefisher.com"></a> </p>
 						</div>
