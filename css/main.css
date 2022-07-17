@@ -20,11 +20,41 @@ body {
     font-size: 16px;
     color: #000;
 }
-
+.clear-left{
+    clear:left;
+}
+.m-btm-20{
+    margin-bottom: 20px;
+}
+.petite-pink{
+    color: #f7d2d4;
+}
+.petite-blue{
+    color: #9bc7ff;
+}
+.gradient-bg{
+    background: linear-gradient(90deg, #ffb7d1 0, #9ab3ff 60.75%, #9bccff);
+}
+.gradient-text {
+    background-color: red;
+    background-image: linear-gradient(45deg, #f96b9f, #4e79fb);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
 html,
 body {
     width: auto !important;
     overflow-x: hidden !important
+}
+.line {
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg, #ffb7d1, #9ab3ff, #bb53f2, #e653c9, #000);
+    border-image-slice: 1;
+        
 }
 
 figure, p, address {
@@ -153,9 +183,11 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	color: #c655e9;
 }
-
+.clear-right{
+    clear:right;
+}
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
 	-webkit-transform: scaleX(1);
 	   -moz-transform: scaleX(1);
@@ -184,13 +216,15 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #009ee3;
+    border-bottom: 2px solid;
     content: "";
     display: block;
     left: 45%;
     bottom: 0;
     position: absolute;
     width: 115px;
+    border-image: linear-gradient(90deg, #ffb7d1, #bb53f2);
+    border-image-slice: 1;
 }
 
 .sec-title.white h2:after {
@@ -597,9 +631,12 @@ h1.navbar-brand {
 }
 
 .service-item:hover .service-icon {
-    border: 3px solid #009ee3;
+    border: 3px solid;
     margin-bottom: 20px;
-    color: #009ee3;
+    color: #688dff;
+
+    border-image: linear-gradient(90deg, #ffb7d1, #9ab3ff, #bb53f2, #e653c9, #ffb7d1);
+    border-image-slice: 1;
 }
 
 .service-icon i {
@@ -1092,15 +1129,28 @@ textarea.form-control {
 }
 
 .submit-icon {
-    background-color: #7f7f7f;
-    border: 0 none;
     border-radius: 0;
     color: #c1c1c1;
-    padding: 13px 20px;
+    padding: 11px 14px;
     position: absolute;
     overflow: hidden;
     right: 0;
     top: 0;
+}
+.my-submit-icon {
+    border-radius: 0;
+    color: #599ff8;
+    padding: 13px 14px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    border: none;
+    width: 14%;
+    height: 47px;
+    margin-top: 2px;
+    background-color: #f7d2d4;
+    margin-right: 2px;
 }
 
 .submit-icon .fa-paper-plane {
