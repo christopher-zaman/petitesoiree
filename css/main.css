@@ -29,6 +29,9 @@ body {
 .petite-pink{
     color: #f7d2d4;
 }
+.important-white{
+    color: #fff !important;
+}
 .petite-blue{
     color: #9bc7ff;
 }
@@ -939,7 +942,7 @@ ul.external li a:hover {
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url(../img/slider/ceiling-lights.jpg);
     padding: 0;
 }
 
