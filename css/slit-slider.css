@@ -156,12 +156,18 @@
 
 .bg-img-1 {
 	background-image: url(../img/slider/networking.jpg);
+	width: 1902px;
+	height: 900px;
 }
 .bg-img-2 {
 	background-image: url(../img/slider/wedding.jpg);
+	width: 1902px;
+	height: 900px;
 }
 .bg-img-3 {
 	background-image: url(../img/slider/front.jpg);
+	width: 1902px;
+	height: 900px;
 }
 
 
