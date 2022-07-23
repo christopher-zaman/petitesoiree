@@ -89,8 +89,7 @@
 }
 
 #nav-arrows > a.sl-next:hover {
-	background-color: #009EE3;
-	border-color: #009EE3;
+	background: linear-gradient(90deg, #ffb7d1 0, #9ab3ff 60.75%, #9bccff);
 	color: #fff;
 }
 
