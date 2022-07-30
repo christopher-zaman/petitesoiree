@@ -942,7 +942,7 @@ ul.external li a:hover {
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/ceiling-lights.jpg);
+    background-image: url(../img/slider/ceiling-lights.webp);
     padding: 0;
 }
 
@@ -1056,7 +1056,7 @@ textarea.form-control {
     height: 300px;
 }
 .pricing-bg{
-    background-image: url(../img/pricing-bg.jpg);
+    background-image: url(../img/pricing-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;   
 }
