@@ -343,7 +343,12 @@ h1.navbar-brand {
     text-transform: uppercase;
 }
 
-
+.sofia-google-font{
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sofia', cursive;
+    letter-spacing: 5px;
+}
 /*=================================================================
 	Home Slider
 ==================================================================*/
