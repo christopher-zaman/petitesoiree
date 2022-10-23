@@ -390,6 +390,9 @@ h1.navbar-brand {
 .sl-slide {
     z-index: 1;
 }
+.m-w-90{
+    max-width: 90%;
+}
 
 .slide-caption {
     color: #fff;
@@ -412,10 +415,10 @@ h1.navbar-brand {
 
 .caption-content h2 {
     color: #fff;
-    font-size: 52px;
+   /* font-size: 52px;*/
     font-weight: 400;
     margin-bottom: 25px;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
 }
 
 .caption-content > span {

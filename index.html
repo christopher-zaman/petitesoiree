@@ -90,8 +90,8 @@
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 				// Output the result in an element with id="demo"
-				document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-					+ minutes + "m " + seconds + "s ";
+				document.getElementById("timer").innerHTML = days + " Days " + hours + " Hours "
+					+ minutes + " Minutes " + seconds + " Seconds ";
 
 				// If the count down is over, write some text 
 				if (distance < 0) {
@@ -197,8 +197,8 @@
                             <div class="caption-content">
 								<span class="animated fadeInDown">Grand opening</span>
 								<span class="animated fadeInDown">October 29, 2022</span>
-                                <h2 id="timer" class="animated fadeInDown"></h2>
-								<img src="img/grand-opening-shadow.png">
+                                <h2 class="animated fadeInDown" id="timer" class="animated fadeInDown"></h2>
+								<img class="m-w-90" src="img/grand-opening-shadow.png">
                                 <!--<a href="#" class="btn btn-blue btn-effect"></a>-->
                             </div>
                         </div>
