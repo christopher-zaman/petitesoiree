@@ -68,6 +68,38 @@
 		  "description": "Indoor Venue Upscale and Chic"
 		}
 		</script>
+
+		<!-- Grand Opening Countdown-->
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Oct 29, 2022 10:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function () {
+
+				// Get today's date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				// Output the result in an element with id="demo"
+				document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+					+ minutes + "m " + seconds + "s ";
+
+				// If the count down is over, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("timer").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
 		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -126,10 +158,13 @@
 				<!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li><a href="#body">Home</a></li>
+                        <!--<li><a href="#body">Home</a></li>-->
+                        <li><a href="#vendors">Vendors</a></li>
+                        <li><a href="#caterers">Caterers</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#amenities">Gallery</a></li>
-                        <!--<li><a href="#testimonials">Testimonial</a></li>-->
+                        <li><a href="#amenities">Amenities</a></li>                        
+                        <li><a href="#gallery">Gallery</a></li>
+						<!--<li><a href="#testimonials">Testimonials</a></li>-->
                         <li><a href="#price">Price</a></li>
 						<li><a href="#rental">Rental Policy</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -160,8 +195,10 @@
 
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2 class="animated fadeInDown"></h2>
-                                <span class="animated fadeInDown"></span>
+								<span class="animated fadeInDown">Grand opening</span>
+								<span class="animated fadeInDown">October 29, 2022</span>
+                                <h2 id="timer" class="animated fadeInDown"></h2>
+								<img src="img/grand-opening-shadow.png">
                                 <!--<a href="#" class="btn btn-blue btn-effect"></a>-->
                             </div>
                         </div>
@@ -171,13 +208,13 @@
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 					
 						<div class="bg-img bg-img-2"></div>
-						<div class="slide-caption">
-                            <!--<div class="caption-content">
-                                <h2>BLUE Onepage HTML5 Template</h2>
-                                <span>Clean and Professional one page Template</span>
+						<!--<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2>October 29, 2022</h2>
                                 <a href="#" class="btn btn-blue btn-effect">Join US</a>
-                            </div>-->
-                        </div>
+								<img src="img/grand-opening.png">
+							</div>
+                        </div>-->
 						
 					</div>
 					
@@ -225,6 +262,158 @@
         <!--
         End Home SliderEnd
         ==================================== -->
+
+		<!-- Preferred Vendors Section -->
+		<!-- about section -->
+		<section id="vendors" class="gradient-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow animated fadeInLeft">
+						<div class="recent-works">
+							<div class="sec-title text-center">
+								<h2 class="wow animated bounceInLeft gradient-text">Preferred Vendors</h2>
+								<p class="some-padding font-larger"><i>We only work with the best vendors who are fully insured, reputable and have the necessary credentials. This way, you
+								can be sure you're getting a professional service that will deliver a great event experience. You'll be dealing with the
+								vendors directly when you rent from us.</i></p>
+							</div>
+						</div>
+					</div>
+					
+		
+		
+		
+				</div>
+			</div>
+		</section>
+		<!-- end about section -->
+		<!-- Preferred Vendors Section end -->
+
+		<!-- Amenities section -->
+		<section id="caterers" class="line">
+			<div class="container">
+				<div class="row">		
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>CATERERS</h2>						
+						<br>				
+					</div>	
+		
+					<ul class="project-wrapper wow animated fadeInUp">
+						<li class="portfolio-item">
+							<picture>
+								<source srcset="img/portfolio/birthday.webp" type="image/webp" class="img-responsive">
+								<source srcset="img/portfolio/birthday.jpg" type="image/jpg" class="img-responsive">
+								<img src="img/portfolio/birthday.jpg" width="381" height="290" class="img-responsive"
+									alt="Celebrate your birthday parties at Petite Soirée Leesburg Florida">
+							</picture>
+		
+							<figcaption class="mask">
+								<h3>COCKTAILS AND CATERING</h3>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Birthday Parties" data-fancybox-group="works"
+										href="img/portfolio/birthday.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+		
+						<li class="portfolio-item">
+							<picture>
+								<source srcset="img/portfolio/champagne.webp" type="image/webp" class="img-responsive">
+								<source srcset="img/portfolio/champagne.jpg" type="image/jpg" class="img-responsive">
+								<img src="img/portfolio/champagne.jpg" width="381" height="290" class="img-responsive"
+									alt="Celebrate your bridal shower at Petite Soirée Leesburg Florida">
+							</picture>
+		
+							<figcaption class="mask">
+								<h3>TABLE TOP CATERING</h3>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Bridal Shower" href="img/portfolio/champagne.jpg"
+										data-fancybox-group="works"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+		
+						<li class="portfolio-item">
+							<picture>
+								<source srcset="img/portfolio/gender-reveal.webp" type="image/webp" class="img-responsive">
+								<source srcset="img/portfolio/gender-reveal.jpg" type="image/jpg" class="img-responsive">
+								<img src="img/portfolio/gender-reveal.jpg" width="381" height="290" class="img-responsive"
+									alt="Celebrate your gender reveal at Petite Soirée Leesburg Florida">
+							</picture>
+		
+		
+							<figcaption class="mask">
+								<h3>FOODIE CATERING</h3>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Gender Reveal" data-fancybox-group="works"
+										href="img/portfolio/gender-reveal.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+		
+						<li class="portfolio-item">
+							<picture>
+								<source srcset="img/portfolio/media-shoot.webp" type="image/webp" class="img-responsive">
+								<source srcset="img/portfolio/media-shoot.jpg" type="image/jpg" class="img-responsive">
+								<img src="img/portfolio/media-shoot.jpg" width="381" height="290" class="img-responsive"
+									alt="Hold your media shoot at Petite Soirée Leesburg Florida.">
+							</picture>
+		
+							<figcaption class="mask">
+								<h3>UNIQUE EVENTS CATERING</h3>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Media Shoots" data-fancybox-group="works"
+										href="img/portfolio/media-shoot.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+		
+						<li class="portfolio-item">
+							<picture>
+								<source srcset="img/portfolio/pop-up-shop.webp" type="image/webp" class="img-responsive">
+								<source srcset="img/portfolio/pop-up-shop.jpg" type="image/jpg" class="img-responsive">
+								<img src="img/portfolio/pop-up-shop.jpg" width="381" height="290" class="img-responsive"
+									alt="Set up your pop up shop quickly at Petite Soirée">
+							</picture>
+							<figcaption class="mask">
+								<h3>PREMIER EVENT SERVICES</h3>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Pop Up Shop" data-fancybox-group="works"
+										href="img/portfolio/pop-up-shop.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+		
+						<li class="portfolio-item">
+							<picture>
+								<source srcset="img/portfolio/workshop.webp" type="image/webp" class="img-responsive">
+								<source srcset="img/portfolio/workshop.jpg" type="image/jpg" class="img-responsive">
+								<img src="img/portfolio/workshop.jpg" width="381" height="290" class="img-responsive"
+									alt="Host a variety of workshops at Petite Soirée">
+							</picture>
+							<figcaption class="mask">
+								<h3>COOKIE JAR FOOD SERVICES</h3>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Work Shops" data-fancybox-group="works"
+										href="img/portfolio/workshop.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+		
+		
+					</ul>
+		
+				</div>
+			</div>
+		</section>
+		<!-- end Amenities section -->
+
+		
 			
 			<!-- about section -->
 			<section id="about" class="gradient-bg">
@@ -318,7 +507,7 @@
 			
 			
 			<!-- About section -->
-			<section id="about" class="gradient-bg">
+			<section id="amenities" class="gradient-bg">
 				<div class="container">
 					<div class="row">
 					
@@ -326,8 +515,18 @@
 							<h2 class="wow animated bounceInLeft gradient-text">Amenities</h2>
 							<p class="wow animated bounceInRight">Celebrate life’s best moments at Petite Soirée!</p>
 						</div>
+
+						<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-home fa-3x"></i>
+								</div>
+								<h3>Vendors</h3>
+								<p>Fully insured professional vendors</p>
+							</div>
+						</div>
 						
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-home fa-3x"></i>
@@ -336,28 +535,38 @@
 								<p>Our room rental is for a min of 6 hours. </p>
 							</div>
 						</div>
+
+						<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-home fa-3x"></i>
+								</div>
+								<h3>Capacity</h3>
+								<p>75 people seated</p>
+							</div>
+						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-clock-o fa-3x"></i>
 								</div>
 								<h3>Time</h3>
-								<p>1 Hours for setup, 4 hours event time and 1 hour wrap up. </p>
+								<p>1 Hours for setup<br> 4 hours event time <br> 1 hour wrap up </p>
 							</div>
 						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+						<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-tasks fa-3x"></i>
 								</div>
 								<h3>Square Feet</h3>
-								<p>The space includes tables, chairs and full room up lighting. </p>
+								<p>1,400 square feet includes tables, chairs and full room up lighting. </p>
 							</div>
 						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+						<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-heart fa-3x"></i>
@@ -375,7 +584,7 @@
 			<!-- end About section -->
 			
 			<!-- Amenities section -->
-			<section id="amenities" class="line">
+			<section id="gallery" class="line">
 				<div class="container">
 					<div class="row">
 					
@@ -496,6 +705,8 @@
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
+
+							
 						</ul>
 						
 					</div>
@@ -514,24 +725,37 @@
 							<div class="col-lg-12">
 								<div id="testimonial" class=" wow animated fadeInUp">
 									<div class="testimonial-item text-center">
-										<img src="img/amanda-neil.png" alt="Our Clients">
+										<img src="img/testimonial-one.png" alt="Our Clients">
 										<div class="clearfix">
-											<span>Katty Flower</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+											<span>Felicia Shelton</span>
+											<p>Since becoming an Ultimate Health Direct Primary Care patient, I have received outstanding healthcare. Amanda and her
+											care team (Nadia and Sara) go above the traditional call of duty. When I needed ultimate healthcare, they answered the
+											call on numerous accounts. In addition, I can almost always count on top-notch care and professionalism from Amanda,
+											Nadia, and Sara. Equally, I am blessed to have unlimited access to Ultimate Health Direct Primary Care 24/7, literally. #blessedtobeinyoucare
+											
 										</div>
 									</div>
 									<div class="testimonial-item text-center">
-										<img src="img/member-1.jpg" alt="Our Clients">
+										<img src="img/testimonial-two.png" alt="Our Clients">
 										<div class="clearfix">
 											<span>Katty Flower</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+											<p>On two occasions, many hours after the traditional operating hours of most healthcare providers, I was a bit under the
+											weather due to unexpected illnesses and needed after-hours healthcare. I contacted Amanda, and, despite the time of the
+											call, Amanda answered immediately. Kindly note that it was a few hours after midnight. It was evident to me, as I hope
+											it is to you, that Amanda cares more about her patients’ personal health needs than traditional operating hours. During
+											one of these incidents, Amanda went above the call of traditional operating hours and met me at her healthcare facility
+											before 8:00 am to attend to my health needs.
+											
+											</p></p>
 										</div>
 									</div>
 									<div class="testimonial-item text-center">
-										<img src="img/member-1.jpg" alt="Our Clients">
+										<img src="img/testimonial-three.png" alt="Our Clients">
 										<div class="clearfix">
 											<span>Katty Flower</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+											<p>If you need a caring, genuine, skilled primary healthcare provider, I highly recommend Amanda and the entire care team
+											at Ultimate Health Direct Primary Care. Amanda, Nadia, and Sara, “thank you, a million times” for your loving care and
+											outstanding service. I am grateful and blessed to be in your care.</p>
 										</div>
 									</div>
 								</div>
@@ -547,13 +771,16 @@
 				<div class="container">
 					<div class="row">				
 						<div class="col-lg-12 col-md-8" data-wow-delay="0.8s">
-							<h1 class="my-white-text text-center">Petite Soirée Event Space Pricing</h1>
+							<h1 class="my-white-text text-center transparent-bg">Petite Soirée Event Space Pricing</h1>
 							<ul class="list-group font-size-x-large">
 								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">Indoor Venue Upscale and Chic</li>
 								<li class="list-group-item margin-bottom-none success-bg border-radius border-none text-center alert-success" role="alert"><a href="#" class="alert-link">Schedule an Appointment</a></li>
-								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">6-foot rectangular tables</li>
-								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">6-foot round tables</li>
-								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">White Resin Chairs</li>
+								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">6 Long Tables</li>
+								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">6 Round Tables</li>
+								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">50 White Folding Chairs</li>
+								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">50 Crystal Chavairi Chairs</li>
+								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">8 Uplights</li>
+								
 								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">Food/Beverage Prep Area</li>
 								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">6 hours (Set up, Event, Breakdown)</li>
 								<li class="list-group-item margin-bottom-none transparent-bg border-none my-white-text text-center">Booking fee: $600 (additional time $125/hr)</li>

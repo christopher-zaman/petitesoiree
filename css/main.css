@@ -351,11 +351,14 @@ h1.navbar-brand {
 /*=================================================================
 	Home Slider
 ==================================================================*/
-
+.some-padding{
+    padding: 10px 90px;
+}
 
 #home-slider {
     position: relative;
     padding: 0;
+    
 }
 
 .sl-slider-wrapper {
@@ -363,6 +366,7 @@ h1.navbar-brand {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+
 }
 
 .sl-slider {
@@ -403,6 +407,7 @@ h1.navbar-brand {
 .slide-caption .caption-content {
     vertical-align: middle;
     display: table-cell;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .caption-content h2 {
@@ -552,7 +557,11 @@ h1.navbar-brand {
     width: 50px;
     left: 0;
 }
-
+.font-larger{
+    font-size: x-large;
+        letter-spacing: 1px;
+        line-height: 1.5;
+}
 /*=================================================================
 	About
 ==================================================================*/
@@ -612,6 +621,252 @@ h1.navbar-brand {
     font-size: 13px;
     margin-left: 135px;
 }
+
+/*=================================================================
+	Copied About
+==================================================================*/
+
+#vendors {
+    background-color: #009EE3;
+    color: #fff;
+}
+
+#vendors h3 {
+    color: #fff;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+
+#vendors .welcome-block h3 {
+    margin: 0 0 65px;
+}
+
+#vendors .welcome-block img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 35px;
+    max-width: 100px;
+}
+
+#vendors .message-body {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.owl-buttons {
+    border: 2px solid #fff;
+    display: inline-block;
+    float: right;
+    padding: 1px 8px 5px;
+}
+
+.owl-buttons>div {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.welcome-message {
+    padding: 0 50px;
+}
+
+.welcome-message img {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    float: left;
+}
+
+.welcome-message p {
+    font-size: 13px;
+    margin-left: 135px;
+}
+
+
+/*=================================================================
+	Copied About Amenities
+==================================================================*/
+
+#amenities {
+    background-color: #009EE3;
+    color: #fff;
+}
+
+#amenities h3 {
+    color: #fff;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+
+#amenities .welcome-block h3 {
+    margin: 0 0 65px;
+}
+
+#amenities .welcome-block img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 35px;
+    max-width: 100px;
+}
+
+#amenities .message-body {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.owl-buttons {
+    border: 2px solid #fff;
+    display: inline-block;
+    float: right;
+    padding: 1px 8px 5px;
+}
+
+.owl-buttons>div {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.welcome-message {
+    padding: 0 50px;
+}
+
+.welcome-message img {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    float: left;
+}
+
+.welcome-message p {
+    font-size: 13px;
+    margin-left: 135px;
+}
+
+
+
+
+/*=================================================================
+	Copied About caterers
+==================================================================*/
+
+#caterers {
+    background-color: #ffffff;
+    color: #fff;
+}
+
+#caterers h3 {
+    color: #fff;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+
+#caterers .welcome-block h3 {
+    margin: 0 0 65px;
+}
+
+#caterers .welcome-block img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 35px;
+    max-width: 100px;
+}
+
+#caterers .message-body {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.owl-buttons {
+    border: 2px solid #fff;
+    display: inline-block;
+    float: right;
+    padding: 1px 8px 5px;
+}
+
+.owl-buttons>div {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.welcome-message {
+    padding: 0 50px;
+}
+
+.welcome-message img {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    float: left;
+}
+
+.welcome-message p {
+    font-size: 13px;
+    margin-left: 135px;
+}
+
+
+/*=================================================================
+	Copied About Gallery
+==================================================================*/
+
+#gallery {
+    background-color: #ffffff;
+    /*color: #fff;*/
+}
+
+#gallery h3 {
+    color: #fff;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+
+#gallery .welcome-block h3 {
+    margin: 0 0 65px;
+}
+
+#gallery .welcome-block img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 35px;
+    max-width: 100px;
+}
+
+#gallery .message-body {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+.owl-buttons {
+    border: 2px solid #fff;
+    display: inline-block;
+    float: right;
+    padding: 1px 8px 5px;
+}
+
+.owl-buttons>div {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.welcome-message {
+    padding: 0 50px;
+}
+
+.welcome-message img {
+    display: block;
+    height: auto;
+    max-width: 100px;
+    float: left;
+}
+
+.welcome-message p {
+    font-size: 13px;
+    margin-left: 135px;
+}
+
 
 /*=================================================================
 	Services
@@ -684,7 +939,7 @@ h1.navbar-brand {
 
 figcaption.mask {
     background-color: rgba(54, 55, 50, 0.79);
-    bottom: -126px;
+    bottom: -166px;
     color: #fff;
     padding: 25px;
     position: absolute;
