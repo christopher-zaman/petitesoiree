@@ -1685,6 +1685,7 @@ textarea.form-control {
     .price-table {
         margin-bottom: 50px;
     }
+    
 
 /* follow us */
     .social-button li:nth-child(2) {
@@ -1783,6 +1784,8 @@ textarea.form-control {
         margin-bottom: 50px;
     }
 
+   
+
 /* contact form */
     .contact-form {
         margin-bottom: 50px;
@@ -1793,3 +1796,16 @@ textarea.form-control {
         width: 380px;
     }
 }
+ .transparent-white-bg {
+     background-color: rgba(255, 255, 255, 0.8);
+ }
+ .left-price-box{
+    float: left;
+    font-size: large;
+ }
+ .right-price-box{
+    font-size:large;
+ }
+ .price-border-bottom{
+    border-bottom: 1px dotted green;
+ }
